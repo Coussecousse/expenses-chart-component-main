@@ -4,13 +4,13 @@
     --fw-700 : 500;
     --fs-400 : 1.125rem;
 
-    --bg-primary-red: hsl(10, 79%, 65%);
-    --bg-primary-blue: hsl(186, 34%, 60%);
+    --color-primary-red: hsl(10, 79%, 65%);
+    --color-primary-blue: hsl(186, 34%, 60%);
 
-    --bg-400: hsl(33, 100%, 98%);
-    --bg-500: hsl(27, 66%, 92%);
-    --bg-600: hsl(28, 10%, 53%);
-    --bg-700:hsl(25, 47%, 15%);
+    --color-400: hsl(33, 100%, 98%);
+    --color-500: hsl(27, 66%, 92%);
+    --color-600: hsl(28, 10%, 53%);
+    --color-700:hsl(25, 47%, 15%);
 
     --w-mobile: 375px;
     --w-desktop: 1440px;
@@ -21,7 +21,22 @@
     box-sizing: border-box;
 }
 body {
+    background: var(--color-500);
     font-family:var(--ff) ;
     font-size: var(--fs);
 }
+main{
+    width: var(--w-mobile);
+    height: 90vh;
+    border: solid;
+    margin: auto;
+}
+/* HEADER */
+header {
+    width: 100%;
+    background-color: var(--color-primary-red);
+    color: var(--color-400);
+    display: inline-flex;
+    justify-content: space-around;
 
+}
