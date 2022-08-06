@@ -1,7 +1,7 @@
 :root {
     --ff : 'DM Sans', sans-serif;
     --fw-400 : 400;
-    --fw-700 : 500;
+    --fw-700 : 700;
     --fs-400 : 1.125rem;
 
     --color-primary-red: hsl(10, 79%, 65%);
@@ -23,13 +23,17 @@
 body {
     background: var(--color-500);
     font-family:var(--ff) ;
-    font-size: var(--fs);
+    font-size: var(--fs-400);
+    font-weight: var(--fs-400);
 }
+
 main{
     width: var(--w-mobile);
     height: 90vh;
     border: solid;
     margin: auto;
+    display: flexbox;
+    gap: 1rem;
 }
 /* HEADER */
 header {
@@ -37,6 +41,23 @@ header {
     background-color: var(--color-primary-red);
     color: var(--color-400);
     display: inline-flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-radius: 10px;
+    line-height: 1.875rem;
+}
+.header__container {
+    
+}
+h1 {
+    font-size: .8em;
+    font-weight:var(--fw-400);
+}
+.header__money {
+    font-weight: var(--fw-700);
+    font-size: 1.25em;
+}
+#logo {
+    height: 3rem;
+    padding-top: .2rem;
 }
